@@ -112,10 +112,10 @@ def ping(host, timeout=1):
 
     try:
         dest = gethostbyname(host)
-        print("Pinging " + dest + " using Python:")
-        print("")
+        # print("Pinging " + dest + " using Python:")
+        # print("")
     except gaierror as ex:
-        print(ex)
+        # print(ex)
         return ['0', '0.0', '0', '0.0']
     
     #Send ping requests to a server separated by approximately one second
